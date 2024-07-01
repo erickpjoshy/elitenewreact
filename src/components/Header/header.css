@@ -1,0 +1,121 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 93px;
+  padding: 20px;
+  color: white;
+  position: fixed; /*navbar sticky*/
+  top: 0;
+  z-index: 21100;
+  background-color: rgba(0, 0, 0, 0.875);
+}
+
+.header-bg {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.no-header {
+  position: absolute; /*navbar sticky*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 93px;
+  padding: 20px;
+  color: white;
+  top: 0;
+  z-index: 21100;
+}
+
+.logo-default {
+  height: 160px;
+  margin-top: 55px;
+}
+
+.logo-normal {
+  margin-top: 5px;
+}
+.break {
+  color: white;
+}
+.modal-contents {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: -495px;
+  width: 495px;
+  height: 100vh;
+  z-index: 21100;
+  border-top-right-radius: 30px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.718) !important;
+  backdrop-filter: blur(15px) !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease;
+}
+
+.sub-menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 247.5px;
+  height: 100%;
+
+  background-color: rgb(24, 70, 41) !important;
+  z-index: 1001;
+  border-top-right-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out; /* Ensure same transition speed */
+}
+
+.sub-menu.active {
+  right: 0;
+  color: white !important;
+}
+
+.sub-menu .menu-link {
+  font-size: 18px;
+  margin-left: 0;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  transition: margin-left 0.5s ease;
+  color: #ffffff !important;
+}
+
+.sub-menu .menu-link:hover {
+  margin-left: 10px;
+}
+
+.sub-menu .sub-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sub-menu .close-submenu {
+  font-size: 20px;
+  color: #ffffff !important;
+  text-decoration: none;
+  transition: margin-left 0.5s ease;
+  text-transform: uppercase;
+}
+
+.sub-menu .close-submenu:hover {
+  margin-left: 10px;
+}

@@ -1,0 +1,31 @@
+.main-banner-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.price {
+  margin-bottom: 50px;
+}
+.carousel-content-middle {
+  display: none !important;
+}
+.clip-loader-cc {
+  width: 100vw;
+  margin-top: 45vh;
+  margin-bottom: 45vh;
+  margin-left: 48%;
+}
+
+@media screen and (max-width: 768px) {
+  .price {
+    margin-bottom: 80px;
+  }
+  .clip-loader-cc {
+    margin-left: 40% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .clip-loader-cc {
+    margin-left: 30% !important;
+  }
+}

@@ -1,0 +1,75 @@
+.portal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(222, 224, 225);
+}
+.portal-main {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.portal-main-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 25px;
+  input {
+    height: 40px;
+    width: 460px;
+    border: none;
+    padding-left: 10px;
+    border-radius: 3px;
+  }
+  .select-box {
+    height: 40px;
+    width: 460px;
+  }
+  .bhk {
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    input {
+      width: 120px;
+    }
+  }
+}
+.post-btn-container {
+  margin: 3px auto;
+  text-align: center;
+  width: 50%;
+  button {
+    position: relative;
+    top: -50px;
+    padding: 10px 20px;
+    background-color: rgb(12, 10, 65);
+    color: white;
+    border-radius: 10px;
+  }
+}
+.portal-main-right {
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 8px;
+    height: 240px;
+  }
+}
+.ant-upload-wrapperant-upload-wrapper,
+.ant-upload-picture-card-wrapper,
+.ant-upload.ant-upload-select {
+  margin: 2px auto;
+}
+.ant-upload-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+}
